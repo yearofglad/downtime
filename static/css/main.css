@@ -6,9 +6,28 @@ body {
     font-size: 14px;
 }
 
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
 .top-container {
     height: 31%;
     background-color: rgb(223, 221, 221);
+}
+
+.home-top-container {
+    height: 31%;
+    background-color: white;
 }
 
 .container {
@@ -235,6 +254,14 @@ body {
     transform: translateY(1px);
 }
 
+.title-container {
+    display: flex;
+    padding-top: 45px; 
+    padding-left: 25px;
+    /* padding: 10px 20px; */
+    width: 100%;
+}
+
 .profile-wrapper {
     display: flex;
     flex-direction: column;
@@ -248,6 +275,14 @@ body {
     font-weight: bold;
 }
 
+.downtime-text {
+    font-size: 48px;
+    font-weight: normal;
+    display: inline-block;
+    width: 100%; /* Adjust as needed */
+    text-align: left; /* Align contents */
+}
+
 .friends-wrapper {
     display: flex;
     flex-direction: column;
@@ -259,6 +294,19 @@ body {
 .friends-text {
     font-size: 25px;
     margin-top: 10%;
+}
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    background: url("../images/searchicon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+    display: inline-block;
+    transform: translateY(23%) translateX(160%);
 }
 
 .profile-icon {

@@ -1,1 +1,81 @@
-Hello
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PP+Mori+Bold&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PP+Mori+ExtraBold&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hanuman&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=favorite,home,search,settings" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home-top-container">
+            <div class="title-container">
+                <div class="downtime-text">
+                    <span>Downtime</span>
+                    <div class="search-icon"></div>
+                </div>
+            </div> 
+        </div>
+        <div class="bottom-container">
+            <div class="friends-wrapper">
+                <div class="friends-text">
+                    <b>200</b> Friends
+                </div>
+            </div>
+            <div class="friends-buttons">
+                <div class="middle-button" id="add-friend-button" data-user-id="{{ user_id }}"> + Add Friend</div>
+                <div class="middle-button" id="message-button" data-user-id="{{ user_id }}"> Message </div>
+            </div>
+        </div>
+        <div class="events-wrapper">
+            {% for event in events %}
+            <div class="event">
+                <div class="event-name">
+                    {{ event.name }}
+                </div>
+                <div class="event-image-wrapper">
+                    <div class="event-text">
+                        Hosted by {{ event.host }}
+                    </div>
+                    <div class="event-time">
+                        {{ event.time }}
+                    </div>
+                    <div class="event-image" style="background-image: url('{{ url_for('static', filename=event.photo) }}');"></div>
+                    <div class="event-bottom">
+                        <div class="event-icon" style="background-image: url('{{ url_for('static', filename=event.host_icon) }}');"></div>
+                        <div class="plus-button" data-event-id="{{ event.id }}">+</div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <p>No events found.</p>
+            {% endfor %}
+        </div>
+        <div class="bottom-bar">
+            <div class="bottom-item">
+                <div class="home"></div>
+                <div class="home-text">Home</div>
+            </div>
+            <div class="bottom-item">
+                <div class="messages"></div>
+                <div class="messages-text">Messages</div>
+            </div>
+            <div class="bottom-item">
+                <div class="create-event"></div>
+                <div class="create-event-text">Create</div>
+            </div>
+            <div class="bottom-item">
+                <div class="profile"></div>
+                <div class="profile-text">Profile</div>
+            </div>
+        </div> 
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
