@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "Donkey Kong Marathon",
+        "photo": "images/event-thumbnail.png",
+        "host": "John Doe",
+        "host_icon": "images/profile-pic-image.png",
+        "time": "Friday, 6 PM"
+    },
+    {
+        "id": 1,
+        "name": "NFL Sunday",
+        "photo": "images/v44_719.png",
+        "host": "Jane Smith",
+        "host_icon": "images/profile-pic-image.png",
+        "time": "Sunday, 3 PM"
+    }
+]
