@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Event</title>
+<link rel="stylesheet" href="create_event.css">
+</head>
+<body>
+
+<div class="create-event-screen">
+
+
+
+
+
+    <header class="event-header">
+        <div class="header-background"></div>
+        <div class="header-overlay"></div> 
+      
+        <div class="header-icons">
+          <button class="icon-button back-button" title="Go Back">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 8 8 12 12 16"/>
+              <line x1="16" y1="12" x2="8" y2="12"/>
+            </svg>
+          </button>
+          <div class="right-icons">
+            <label class="icon-button upload-button" title="Upload Event Image">
+              <input type="file" id="uploadImageInput" style="display:none;" accept="image/*">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </label>
+            <!-- “stroke-linejoin - SVG: Scalable Vector Graphics | MDN.” MDN Web Docs, 26 August 2024, https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linejoin. Accessed 15 December 2024.
+ -->
+            <button class="icon-button more-button" title="More options">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="1"/>
+                <circle cx="8" cy="12" r="1"/>
+                <circle cx="16" cy="12" r="1"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      
+        <div class="header-bottom-row">
+          <input type="text" class="event-title" id="eventTitle" placeholder="Event title...">
+          <div class="profile-pic-container">
+            <img src="images/profile.png" alt="User Profile Picture" class="profile-pic">
+          </div>
+        </div>
+      </header>
+      
+
+
+
+
+
+  <!-- “<label>: The Label element - HTML: HyperText Markup Language | MDN.” MDN Web Docs, 21 November 2024, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label. Accessed 15 December 2024.
+ -->
+  <main class="event-form-section">
+    <form class="event-form" id="eventForm">
+
+      <div class="form-group">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" id="location" name="location" placeholder="e.g. East Campus 1120..." class="form-input">
+      </div>
+
+      <div class="datetime-section">
+        <div class="form-group half">
+      
+      
+      
+          <label for="event-date" class="form-label">Date</label>
+          <input type="date" id="event-date" name="event-date" class="form-input">
+        </div>
+        <div class="form-group half">
+          <label for="event-time" class="form-label">Time</label>
+          <input type="time" id="event-time" name="event-time" class="form-input">
+        </div>
+      </div>
+<!--
+      “HTML input placeholder Attribute.” W3Schools, https://www.w3schools.com/tags/att_input_placeholder.asp. Accessed 15 December 2024.
+
+-->
+      <div class="tags-section" id="tagsSection">
+        <span class="tag">#movies<span class="tag-delete">x</span></span>
+        <span class="tag">#music<span class="tag-delete">x</span></span>
+    
+        <span class="custom-tag-input">
+          <input type="text" class="tag-input" placeholder="#___" id="newTagInput">
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="event-description" class="form-label">Event Description</label>
+        <textarea id="event-description" name="event-description" placeholder="Enter description here..." class="form-textarea"></textarea>
+      </div>
+  <!--  
+     “<polyline> - SVG: Scalable Vector Graphics | MDN.” MDN Web Docs, 2 April 2024, https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline. Accessed 15 December 2024. 
+  
+      “SVG Polyline - <polyline>.” W3Schools, https://www.w3schools.com/graphics/svg_polyline.asp. Accessed 15 December 2024.
+
+  -->
+      <div class="buttons-container">
+        <button type="button" class="btn draft-btn" id="saveDraftBtn">
+          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d4c2d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          <span class="btn-text">Save Draft</span>
+        </button>
+        <button type="submit" class="btn submit-btn" id="submitBtn">
+   
+          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <span class="btn-text">Submit</span>
+        </button>
+      </div>
+      
+    </form>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item">
+      <div class="nav-icon">🏠</div>
+      
+      
+      
+      <div class="nav-label">Home</div>
+    </a>
+    <a href="#" class="nav-item">
+      <div class="nav-icon">💬</div>
+      <div class="nav-label">Messages</div>
+    </a>
+    <a href="#" class="nav-item active">
+      <div class="nav-icon">➕</div>
+      <div class="nav-label">Create Events</div>
+    </a>
+    <a href="#" class="nav-item">
+      <div class="nav-icon">👤</div>
+      <div class="nav-label">Profile</div>
+    </a>
+  </nav>
+
+</div>
+
+<div id="confetti-container"></div>
+
+<script>
+
+const tagsSection = document.getElementById('tagsSection');
+
+
+const newTagInput = document.getElementById('newTagInput');
+
+newTagInput.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    addCustomTag();
+  }
+});
+
+newTagInput.addEventListener('blur', function() {
+  if (newTagInput.value.trim() !== '') {
+    addCustomTag();
+  }
+});
+//Stack Overflow. “How to add text into span after document.createElement("span");?” Stack Overflow, https://stackoverflow.com/questions/26542652/how-to-add-text-into-span-after-document-createelementspan. Accessed 2024.
+
+function addCustomTag() {
+  const value = newTagInput.value.trim();
+  if (value !== '') {
+    const newTag = document.createElement('span');
+    newTag.className = 'tag';
+    newTag.textContent = value.startsWith('#') ? value : '#' + value;
+
+    const deleteSpan = document.createElement('span');
+    deleteSpan.className = 'tag-delete';
+    deleteSpan.textContent = 'x';
+    newTag.appendChild(deleteSpan);
+
+    tagsSection.insertBefore(newTag, tagsSection.lastElementChild);
+    newTagInput.value = '';
+  }
+}
+
+tagsSection.addEventListener('click', function(e) {
+  if (e.target.classList.contains('tag-delete')) {
+    const tagToRemove = e.target.parentElement;
+    tagsSection.removeChild(tagToRemove);
+  }
+});
+
+const saveDraftBtn = document.getElementById('saveDraftBtn');
+const eventForm = document.getElementById('eventForm');
+
+saveDraftBtn.addEventListener('click', function() {
+  const data = gatherFormData();
+  //“Using the Fetch API - Web APIs | MDN.” MDN Web Docs, 24 October 2024, https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch. Accessed 15 December 2024.
+  fetch('/saveDraft', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
+  
+    console.log('Draft saved:', response);
+    alert('Draft saved!');
+  })
+  .catch(err => console.error('Error saving draft:', err));
+});
+
+eventForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const data = gatherFormData();
+  fetch('/submitEvent', {
+    method: 'POST',
+  
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
+    console.log('Event submitted:', response);
+    showConfetti();
+  })
+  .catch(err => console.error('Error submitting event:', err));
+});
+
+function gatherFormData() {
+  const title = document.getElementById('eventTitle').value.trim();
+  const location = document.getElementById('location').value.trim();
+  const date = document.getElementById('event-date').value;
+  const time = document.getElementById('event-time').value;
+  const description = document.getElementById('event-description').value.trim();
+
+  const tagElements = tagsSection.querySelectorAll('.tag');
+  const tags = Array.from(tagElements).map(tagEl => tagEl.firstChild.textContent.trim());
+
+  return {
+    title,
+    location,
+    date,
+    time,
+    description,
+    tags
+  };
+}
+//iEatWebsites. “Add confetti to your website with JavaScript.” YouTube, https://www.youtube.com/watch?v=tTIaA1Xmzmg. Accessed 2024.
+
+function showConfetti() {
+  const confettiContainer = document.getElementById('confetti-container');
+  confettiContainer.innerHTML = '';
+  
+  for (let i = 0; i < 100; i++) {
+    const confetti = document.createElement('div');
+    
+    
+    confetti.className = 'confetti';
+    confetti.style.left = Math.random() * 100 + '%';
+    const colors = ['#f2b632', '#f28b30', '#f25c54', '#59a96a', '#489fb5'];
+    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+   
+     const duration = Math.random() * 2 + 2;
+    confetti.style.animationDuration = duration + 's';
+    confettiContainer.appendChild(confetti);
+  }
+
+  setTimeout(() => {
+    confettiContainer.innerHTML = '';
+  }, 5000);
+}
+
+document.getElementById('uploadImageInput').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function() {
+      document.querySelector('.header-background').style.backgroundImage = `url('${reader.result}')`;
+    }
+    reader.readAsDataURL(file);
+  }
+});
+</script>
+
+</body>
+</html>
