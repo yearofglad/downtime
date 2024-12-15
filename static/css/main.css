@@ -6,18 +6,81 @@ body {
     font-size: 14px;
 }
 
-.material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
+.tags-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.home-tags-section {
+    margin-top: 2%;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+.explore-tags-section {
+    padding-left: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  
+  .tag:hover {
+    background: #ccc;
+  }
+
+  .home-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #E84855;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #E84855;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+
+  .home-tag:active {
+    background: #E84855;
+    color: #ffffff;
+  }
+
+  .explore-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #003E1F;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #003E1F;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
   }
 
 .top-container {
@@ -208,8 +271,8 @@ body {
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: #0b5e00;
-    color: white;
+    background-color: #ffffff;
+    color: #003E1F;
     font-size: 20px;
     font-weight: bold;
     border-radius: 50%;
@@ -281,6 +344,13 @@ body {
     display: inline-block;
     width: 100%; /* Adjust as needed */
     text-align: left; /* Align contents */
+}
+
+.header-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5%;
+    padding-left: 25px;
 }
 
 .friends-wrapper {

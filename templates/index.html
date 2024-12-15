@@ -21,18 +21,20 @@
                     <div class="search-icon"></div>
                 </div>
             </div> 
+            <div class="header-text">
+                <span>Your Events</span>
+            </div>
+            <div class="home-tags-section" id="tagsSection">
+                <span class="home-tag">Upcoming</span>
+                <span class="home-tag">Hosting</span>
+                <span class="home-tag">Attended</span>
+                <span class="home-tag">Past Events</span>
+            </div>
         </div>
         <div class="bottom-container">
-            <div class="friends-wrapper">
-                <div class="friends-text">
-                    <b>200</b> Friends
-                </div>
-            </div>
-            <div class="friends-buttons">
-                <div class="middle-button" id="add-friend-button" data-user-id="{{ user_id }}"> + Add Friend</div>
-                <div class="middle-button" id="message-button" data-user-id="{{ user_id }}"> Message </div>
-            </div>
+            
         </div>
+        
         <div class="events-wrapper">
             {% for event in events %}
             <div class="event">
@@ -57,6 +59,24 @@
             <p>No events found.</p>
             {% endfor %}
         </div>
+
+        <div class="home-tags-section">
+            <span class="tag">All Tags</span>
+            <span class="tag">#books</span>
+            <span class="tag">#sports</span>
+            <span class="tag">#ambient music</span>
+            <span class="tag">#donkey kong</span>
+        </div>
+
+        <div class="tags-section" id="tagsSection">
+            <span class="tag">All Tags</span>
+            <span class="tag">#books</span>
+            <span class="tag">#sports</span>
+            <span class="tag">#ambient music</span>
+            <span class="tag">#donkey kong</span>
+        </div>
+
+
         <div class="bottom-bar">
             <div class="bottom-item">
                 <div class="home"></div>
