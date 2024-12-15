@@ -24,7 +24,10 @@ def profile():
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    user_id = 0
+    with open('static/json/events.json', 'r') as file:
+        events = json.load(file)
+    return render_template('index.html', user_id=user_id, events=events)
 
 if __name__ == "__main__":
     app.run(debug=True)
