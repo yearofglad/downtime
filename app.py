@@ -22,6 +22,12 @@ def profile():
         events = json.load(file)
     return render_template('profile.html', user_id=user_id, events=events)
 
+@app.route('/eventscreen')
+def home():
+    with open('static/json/events.json', 'r') as file:
+        events = json.load(file)
+    return render_template('eventscreen.html', event=events[0])
+
 @app.route('/')
 def home():
     user_id = 0

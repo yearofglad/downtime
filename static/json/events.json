@@ -5,7 +5,10 @@
         "photo": "images/event-thumbnail.png",
         "host": "John Doe",
         "host_icon": "images/profile-pic-image.png",
-        "time": "Friday, 6 PM"
+        "time": "Friday, 6 PM",
+        "location": "Hogan 340",
+        "spots": "10 Spots",
+        "description": "Do you like playing Donkey Kong Country: Tropical Freeze? I do. Come on over to Hogan 340 for some epic co-op gaming moments. BYOB."
     },
     {
         "id": 1,
@@ -13,6 +16,9 @@
         "photo": "images/v44_719.png",
         "host": "Jane Smith",
         "host_icon": "images/profile-pic-image.png",
-        "time": "Sunday, 3 PM"
+        "time": "Sunday, 3 PM",
+        "location": "Hogan 310",
+        "spots": "15 Spots",
+        "description": "Watch NFL Sunday games with friends. Snacks provided. BYOB."
     }
 ]
