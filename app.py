@@ -35,6 +35,5 @@ def home():
         events = json.load(file)
     return render_template('index.html', user_id=user_id, events=events)
 
-
 if __name__ == "__main__":
     app.run(debug=True)
