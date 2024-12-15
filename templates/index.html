@@ -25,57 +25,76 @@
                 <span>Your Events</span>
             </div>
             <div class="home-tags-section" id="tagsSection">
-                <span class="home-tag">Upcoming</span>
+                <span class="home-tag active">Upcoming</span>
                 <span class="home-tag">Hosting</span>
                 <span class="home-tag">Attended</span>
                 <span class="home-tag">Past Events</span>
             </div>
+
+            <div class="events-wrapper">
+                {% for event in events %}
+                <div class="event">
+                    <div class="event-name">
+                        {{ event.name }}
+                    </div>
+                    <div class="event-image-wrapper">
+                        <div class="event-text">
+                            Hosted by {{ event.host }}
+                        </div>
+                        <div class="event-time">
+                            {{ event.time }}
+                        </div>
+                        <div class="event-image" style="background-image: url('{{ url_for('static', filename=event.photo) }}');"></div>
+                        <div class="event-bottom">
+                            <div class="event-icon" style="background-image: url('{{ url_for('static', filename=event.host_icon) }}');"></div>
+                            <div class="plus-button" data-event-id="{{ event.id }}">+</div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p>No events found.</p>
+                {% endfor %}
+            </div>
         </div>
         <div class="bottom-container">
+            <div class="bottom-header-text">
+                <span>Explore Events</span>
+            </div>
+    
+            <div class="explore-tags-section">
+                <span class="explore-tag active">All Tags</span>
+                <span class="explore-tag">#books</span>
+                <span class="explore-tag">#sports</span>
+                <span class="explore-tag">#ambient music</span>
+                <span class="explore-tag">#donkey kong</span>
+            </div>
+
+            <div class="events-wrapper">
+                {% for event in events %}
+                <div class="event">
+                    <div class="event-name">
+                        {{ event.name }}
+                    </div>
+                    <div class="event-image-wrapper">
+                        <div class="event-text">
+                            Hosted by {{ event.host }}
+                        </div>
+                        <div class="event-time">
+                            {{ event.time }}
+                        </div>
+                        <div class="event-image" style="background-image: url('{{ url_for('static', filename=event.photo) }}');"></div>
+                        <div class="event-bottom">
+                            <div class="event-icon" style="background-image: url('{{ url_for('static', filename=event.host_icon) }}');"></div>
+                            <div class="plus-button" data-event-id="{{ event.id }}">+</div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p>No events found.</p>
+                {% endfor %}
+            </div>
             
         </div>
-        
-        <div class="events-wrapper">
-            {% for event in events %}
-            <div class="event">
-                <div class="event-name">
-                    {{ event.name }}
-                </div>
-                <div class="event-image-wrapper">
-                    <div class="event-text">
-                        Hosted by {{ event.host }}
-                    </div>
-                    <div class="event-time">
-                        {{ event.time }}
-                    </div>
-                    <div class="event-image" style="background-image: url('{{ url_for('static', filename=event.photo) }}');"></div>
-                    <div class="event-bottom">
-                        <div class="event-icon" style="background-image: url('{{ url_for('static', filename=event.host_icon) }}');"></div>
-                        <div class="plus-button" data-event-id="{{ event.id }}">+</div>
-                    </div>
-                </div>
-            </div>
-            {% else %}
-            <p>No events found.</p>
-            {% endfor %}
-        </div>
-
-        <div class="home-tags-section">
-            <span class="tag">All Tags</span>
-            <span class="tag">#books</span>
-            <span class="tag">#sports</span>
-            <span class="tag">#ambient music</span>
-            <span class="tag">#donkey kong</span>
-        </div>
-
-        <div class="tags-section" id="tagsSection">
-            <span class="tag">All Tags</span>
-            <span class="tag">#books</span>
-            <span class="tag">#sports</span>
-            <span class="tag">#ambient music</span>
-            <span class="tag">#donkey kong</span>
-        </div>
-
 
         <div class="bottom-bar">
             <div class="bottom-item">
@@ -96,6 +115,6 @@
             </div>
         </div> 
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
 </body>
 </html>
