@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Screen</title>
+    <link href="{{ url_for('static', filename='css/eventscreen.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- App Container -->
+    <div class="app-container">
+
+       
+        <!-- Event Banner -->
+         <div class="event-banner" style="background-image: url('{{ url_for('static', filename=event.photo) }}');">
+            <div class="event-name">{{ event.name }}</div>
+        </div>
+
+        <!-- Profile Image -->
+            <div class="profile-container-right">
+                <img src="{{ url_for('static', filename=event.host_icon) }}" alt="Host Image" class="profile-image">
+            </div>
+        <!-- Hosted by Text -->
+         <div class="hosted-by">
+            Hosted by <span class="host-name">{{ event.host }}</span>
+        </div>
+        
+
+        <!-- Event Title and Tags -->
+        <div class="event-tags-container">
+            <div class="event-tags">
+                <span>#games</span>
+                <span>#mario</span>
+                <span>#nintendo</span>
+                <span>#switch</span>
+                <span>#donkeykong</span>
+            </div>
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+            <div class="event-schedule">
+                <span class="event-time">{{ event.time }}</span>
+                <span class="event-location">{{ event.location }}</span>
+                <span class="event-slots">{{ event.spots }}</span>
+            </div>
+            <div class="event-description-box">
+                <p class="event-description">
+                    {{ event.description }}
+                </p>
+            </div>
+        </div>
+
+       
+        <!-- Message and Join Buttons -->
+        <div class="event-actions">
+            <button class="message-button">Message</button>
+            <button class="join-button">+ Join</button>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottom-bar">
+            <div class="bottom-item">
+                <div class="home"></div>
+                <span>Home</span>
+            </div>
+            <div class="bottom-item">
+                <div class="messages"></div>
+                <span>Messages</span>
+            </div>
+            <div class="bottom-item">
+                <div class="create-event"></div>
+                <span>Create Event</span>
+            </div>
+            <div class="bottom-item">
+                <div class="profile"></div>
+                <span>Profile</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

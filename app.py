@@ -24,7 +24,11 @@ def profile():
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    with open('static/json/events.json', 'r') as file:
+        events = json.load(file)
+    # Pass the first event to the template
+    return render_template('eventscreen.html', event=events[0])
+
 
 if __name__ == "__main__":
     app.run(debug=True)
