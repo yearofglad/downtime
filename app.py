@@ -22,12 +22,18 @@ def profile():
         events = json.load(file)
     return render_template('profile.html', user_id=user_id, events=events)
 
-@app.route('/')
+@app.route('/eventscreen')
 def home():
     with open('static/json/events.json', 'r') as file:
         events = json.load(file)
-    # Pass the first event to the template
     return render_template('eventscreen.html', event=events[0])
+
+@app.route('/')
+def home():
+    user_id = 0
+    with open('static/json/events.json', 'r') as file:
+        events = json.load(file)
+    return render_template('index.html', user_id=user_id, events=events)
 
 
 if __name__ == "__main__":
