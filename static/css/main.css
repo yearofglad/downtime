@@ -362,8 +362,8 @@ body {
     font-size: 48px;
     font-weight: normal;
     display: inline-block;
-    width: 100%; /* Adjust as needed */
-    text-align: left; /* Align contents */
+    width: 100%; 
+    text-align: left; 
 }
 
 .header-text {
