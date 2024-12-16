@@ -41,6 +41,8 @@ http://127.0.0.1:5000/eventscreen
 5. "Columbia University in the City of New York: "A Doubled Magic"" - Columbia University Youtube
 6. Stock footage
 
+## Special Thanks to Lisa and Gaurav. Brian Smith is the GOAT!
+
 
 
 
