@@ -3,6 +3,10 @@
 # UI Design Fall 2024 / Team 16
 Matt, Zack, Ben, & Alonzo
 
+## Watch the showcase
+
+[![Watch the showcase](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/r5jgArkhyS4)
+
 ## Installation
 1. Make sure Flask and Python are installed.
 2. Download or clone repo. 
