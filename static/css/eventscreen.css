@@ -6,9 +6,19 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: #f5f5f5;
     font-size: 14px;
+}
+
+@font-face {
+    font-family: "mori-bold";
+    src: url("../fonts/moribold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "mori-semibold";
+    src: url("../fonts/morisemibold.woff2") format('woff2');
 }
 
 .app-container {
@@ -43,9 +53,10 @@ body {
     height: 65px; 
     color: white;
     font-size: 30px; 
+    font-family: "mori-bold", sans-serif;
     font-weight: bold;
     line-height: 1.2; 
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);  */
     overflow: hidden; 
     z-index: 1; 
     display: flex;
@@ -76,6 +87,7 @@ body {
 }
 
 .hosted-by {
+    font-family: "mori-semibold", sans-serif;
     position: relative; 
     margin: 20px 0px 0px 20px; 
     font-size: 20px; 
@@ -85,6 +97,7 @@ body {
 }
 
 .host-name {
+    font-family: "mori-bold", sans-serif;
     color: #00cc99; 
     font-weight: bold; 
 }
