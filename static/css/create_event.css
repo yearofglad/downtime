@@ -26,8 +26,8 @@ body, html {
   
 .create-event-screen {
   width: 402px;
-  height: 100vh; /* Use full viewport height */
-  max-height: 874px; /* Prevent overflow on smaller screens */
+  height: 100vh; 
+  max-height: 874px;
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
