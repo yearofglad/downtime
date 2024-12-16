@@ -4,8 +4,7 @@
 Matt, Zack, Ben, & Alonzo
 
 ## Watch the showcase
-
-[![Watch the showcase](https://img.youtube.com/vi/r5jgArkhyS4/maxresdefault.jpg)](https://youtu.be/r5jgArkhyS4)
+https://www.youtube.com/watch?v=r5jgArkhyS4
 
 ## Installation
 1. Make sure Flask and Python are installed.
