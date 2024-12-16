@@ -17,7 +17,7 @@ body {
 }
 
 @font-face {
-    font-family: "mori-semibold";
+    font-family: "mori-sem";
     src: url("../fonts/morisemibold.woff2") format('woff2');
 }
 
@@ -87,18 +87,19 @@ body {
 }
 
 .hosted-by {
-    font-family: "mori-semibold", sans-serif;
+    
+    font-family: "mori-sem", sans-serif;
     position: relative; 
-    margin: 20px 0px 0px 20px; 
-    font-size: 20px; 
+    margin: 17px 0px 0px 16px; 
+    font-size: 24px; 
     font-weight: bold; 
-    color: #555; 
+    color: #000000; 
     text-align: left; 
 }
 
 .host-name {
-    font-family: "mori-bold", sans-serif;
-    color: #00cc99; 
+    font-family: "mori-sem", sans-serif;
+    color: #1B998B; 
     font-weight: bold; 
 }
 
@@ -115,11 +116,42 @@ body {
 }
 
 .event-tags span {
-    background-color: green;
+    background-color: #003E1F;
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 12px;
     color:white;
+}
+
+.explore-tags-section {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 2%;
+    padding-left: 25px;
+    display: flex;
+    white-space: nowrap; 
+    gap: 10px;
+    justify-content: left;
+    scrollbar-width: none;
+    overflow-x: auto;
+  }
+
+  .explore-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #003E1F;
+    border: 1px solid #003E1F;
+    padding: 7px 12px 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+
+  .explore-tags-section::-webkit-scrollbar {
+    display: none; 
 }
 
 .event-details {
@@ -145,23 +177,32 @@ body {
 
 .event-description {
     font-size: 19px;
-    color: green; 
+    color: #003E1F; 
     line-height: 1.5; 
     margin: 0; 
 }
 
 
 .event-time {
-    font-size:25px;
-    text-align:center;
+    font-family: "mori-bold", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .event-location {
-    font-size:25px;
+    font-family: "mori-bold", sans-serif;
+    font-size:36px;
     text-align:center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .event-slots {
-    font-size:25px;
+    font-family: "mori-bold", sans-serif;
+    font-size:36px;
     text-align:center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .event-actions {
@@ -174,11 +215,11 @@ body {
 .message-button {
     width: 48%;
     padding: 20px 0; 
-    border: 2px solid green;
+    border: 2px solid #003E1F;
     border-radius: 50px;
     font-size: 18px; 
     font-weight: bold;
-    color: green;
+    color: #003E1F;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: white;
@@ -195,7 +236,7 @@ body {
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    background-color: #00cc99;
+    background-color: #003E1F;
 }
 
 .message-button:hover, .join-button:hover {
@@ -205,74 +246,52 @@ body {
 
   
 .bottom-bar {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     font-family: sans-serif;
-    background-color: rgb(223, 221, 221);
+    background-color: rgba(255, 255, 255, 0.756);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
+    border-top: 1px solid rgba(163, 163, 163, 0.7);
     width: 100%;
-    height: 85px;
-}
-
-.home {
-  background: url("../images/25694.png");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-  margin-top: 5%;
-}
-
-.home-text {
-  margin-left: 2%
+    height: 83px;
+    padding-bottom: 30px;
 }
 
 .bottom-item {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  gap: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
-.messages {
-  background: url("../images/685887.png");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-  margin-top: 5%;
+.bruh {
+    color: #999999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -2px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.create-event {
-  background: url("../images/create-event-icon.png");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-  margin-top: 5%;
+.bruh-text {
+    color: #999999;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-left: 2%;
+    white-space: nowrap
 }
 
-.profile {
-  background: url("../images/profile-icon.webp");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-  margin-top: 5%;
+.bruh.active {
+    color: #003E1F;
+}
+
+.bruh-text.active {
+    color: #003E1F;
 }

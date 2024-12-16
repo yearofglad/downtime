@@ -85,7 +85,7 @@
         <span class="tag">#music<span class="tag-delete">x</span></span>
     
         <span class="custom-tag-input">
-          <input type="text" class="tag-input" placeholder="#___" id="newTagInput">
+          <input type="text" class="tag-input" placeholder="new tag..." id="newTagInput">
         </span>
       </div>
 
@@ -122,28 +122,6 @@
     </form>
   </main>
 
-    <div class="bottom-bar">
-      <div class="bottom-item" data-name="Home" data-link="/">
-          <div class="home"></div>
-          <div class="home-text">Home</div>
-      </div>
-      <div class="bottom-item" data-name="Messages" data-action="under-construction">
-          <div class="messages"></div>
-          <div class="messages-text">Messages</div>
-      </div>
-      <div class="bottom-item" data-name="Create" data-link="/create_event">
-          <div class="create-event"></div>
-          <div class="create-event-text">Create</div>
-      </div>
-      <div class="bottom-item" data-name="Profile" data-link="/profile">
-          <div class="profile"></div>
-          <div class="profile-text">Profile</div>
-      </div>
-  </div>    
-</div> 
-
-</div>
-
 <div id="confetti-container"></div>
 <script src="{{ url_for('static', filename='js/bottom.js') }}"></script>
 
@@ -177,7 +155,7 @@ function addCustomTag() {
 
     const deleteSpan = document.createElement('span');
     deleteSpan.className = 'tag-delete';
-    deleteSpan.textContent = 'x';
+    deleteSpan.textContent = '×';
     newTag.appendChild(deleteSpan);
 
     tagsSection.insertBefore(newTag, tagsSection.lastElementChild);

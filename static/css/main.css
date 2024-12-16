@@ -137,8 +137,9 @@ body, html {
 }
 
 .profile-catchphrase {
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 18px;
+    color: #003E1F; 
+    font-weight: 500;
     margin-top: -1%;
     font-family: sans-serif;
 }
@@ -279,12 +280,11 @@ body, html {
     height: 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #0b5e00;
+    background-color: #003E1F;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     user-select: none;
     flex-shrink: 0;
     flex-grow: 0;
@@ -445,33 +445,19 @@ body, html {
 }
 
 .bottom-bar {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     font-family: sans-serif;
-    background-color: rgb(223, 221, 221);
+    background-color: rgba(255, 255, 255, 0.756);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
+    border-top: 1px solid rgba(163, 163, 163, 0.7);
     width: 100%;
-    height: 85px;
-}
-
-.home {
-    background: url("../images/25694.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
-    margin-top: 5%;
-}
-
-.home-text {
-    margin-left: 2%
+    height: 83px;
+    padding-bottom: 30px;
 }
 
 .bottom-item {
@@ -481,39 +467,31 @@ body, html {
     gap: 5px;
 }
 
-.messages {
-    background: url("../images/685887.png");
+.bruh {
+    color: #999999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
+    margin-top: -2px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
-    margin-top: 5%;
 }
 
-.create-event {
-    background: url("../images/create-event-icon.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
-    margin-top: 5%;
+.bruh-text {
+    color: #999999;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-left: 2%;
+    white-space: nowrap
 }
 
-.profile {
-    background: url("../images/profile-icon.webp");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
-    margin-top: 5%;
-    
+.bruh.active {
+    color: #003E1F;
 }
+
+.bruh-text.active {
+    color: #003E1F;
+}
+
