@@ -11,7 +11,6 @@ body {
     font-size: 14px;
 }
 
-/* App Container */
 .app-container {
     width: 402px;
     height: 874px;
@@ -25,7 +24,6 @@ body {
 
 
 
-/* Event Banner*/
 .event-banner {
     width: 100%;
     height: 240px; 
@@ -37,9 +35,6 @@ body {
 }
 
 
-
-
-/* Event Name Overlay */
 .event-name {
     position: absolute;
     bottom: 10px; 
@@ -58,9 +53,6 @@ body {
 }
 
 
-
-
-/* Profile Container */
 .profile-container-right {
     position: absolute;
     top: 220px; 
@@ -83,8 +75,6 @@ body {
     border: 3px solid white;
 }
 
-
-/* Hosted by Section*/
 .hosted-by {
     position: relative; 
     margin: 20px 0px 0px 20px; 
@@ -99,8 +89,6 @@ body {
     font-weight: bold; 
 }
 
-
-/* Event Tag Container and Tag Items */
 .event-tags-container {
     margin-top: 20px; 
     padding: 0px 0px;
@@ -121,7 +109,6 @@ body {
     color:white;
 }
 
-/* Event Details */
 .event-details {
     padding: 20px;
     background: white;
@@ -164,9 +151,6 @@ body {
     text-align:center;
 }
 
-
-
-/* Buttons */
 .event-actions {
     display: flex;
     justify-content: space-between;
@@ -178,71 +162,104 @@ body {
     width: 48%;
     padding: 20px 0; 
     border: 2px solid green;
-    border-radius: 10px; /* button style */
+    border-radius: 10px;
     font-size: 18px; 
     font-weight: bold;
     color: green;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover animation */
-    background-color: white; /* Button color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: white;
+
 }
+
 .join-button {
     width: 48%;
     padding: 20px 0; 
     border: none;
-    border-radius: 10px; /* button style */
+    border-radius: 10px;
     font-size: 18px; 
     font-weight: bold;
     color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover animation */
-    background-color: #00cc99; /* Button color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #00cc99;
 }
 
-/* Button Hover Effects */
 .message-button:hover, .join-button:hover {
-    transform: translateY(-2px); /* Lifts button on hover */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /*  shadow on hover */
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Bottom Navigation Bar */
+  
 .bottom-bar {
+    backdrop-filter: blur(10px);
+    font-family: sans-serif;
+    background-color: rgb(223, 221, 221);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 70px;
-    background: white;
-    border-top: 1px solid #ddd;
-}
-
-.bottom-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.bottom-item div {
-    width: 30px;
-    height: 30px;
-    background-size: cover;
+    height: 85px;
 }
 
 .home {
-    background: url("../images/25694.png") no-repeat center center;
+  background: url("../images/25694.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.home-text {
+  margin-left: 2%
+}
+
+.bottom-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 5px; 
 }
 
 .messages {
-    background: url("../images/685887.png") no-repeat center center;
+  background: url("../images/685887.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 5%;
 }
 
 .create-event {
-    background: url("../images/create-event-icon.png") no-repeat center center;
+  background: url("../images/create-event-icon.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 5%;
 }
 
 .profile {
-    background: url("../images/profile-icon.webp") no-repeat center center;
+  background: url("../images/profile-icon.webp");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 5%;
 }

@@ -3,14 +3,14 @@
   }
 
 body, html {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #f4f4f4;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+background-color: #f4f4f4;
 }
   
 
@@ -468,7 +468,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 5px; 
 }
 
 .messages {
