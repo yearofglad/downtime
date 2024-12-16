@@ -164,15 +164,16 @@ body, html {
   }
   
   .form-group {
+    font-size: 18px;
     margin-bottom: 20px;
     text-align: left;
   }
   
   .form-label {
+    font-size: 24px !important;
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 14px;
   }
   
   .form-input,
@@ -185,6 +186,8 @@ body, html {
     font-size: 14px;
     outline: none;
   }
+
+  
   
   .form-input:focus,
   .form-textarea:focus {
