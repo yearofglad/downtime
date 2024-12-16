@@ -4,7 +4,7 @@
 
 ### Installation
 1. Make sure Flask and Python are installed.
-2. Download 
+2. Download or clone repo. 
 3. Navigate to the /downtime folder.
 4. To run the server locally, run "python app.py" in your command line.
 
