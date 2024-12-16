@@ -5,7 +5,7 @@ Matt, Zack, Ben, & Alonzo
 
 ## Watch the showcase
 
-[![Watch the showcase](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/r5jgArkhyS4)
+[![Watch the showcase](https://img.youtube.com/vi/r5jgArkhyS4/maxresdefault.jpg)](https://youtu.be/r5jgArkhyS4)
 
 ## Installation
 1. Make sure Flask and Python are installed.
@@ -31,7 +31,4 @@ http://127.0.0.1:5000/eventscreen
 5. W3Schools
 6. Stack Overflow
 7. iEatWebsites
-
-## Watch the showcase
-https://img.youtube.com/vi/r5jgArkhyS4/maxresdefault.jpg
 
