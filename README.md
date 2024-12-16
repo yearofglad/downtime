@@ -19,7 +19,7 @@ http://127.0.0.1:5000/create_event
 ### Event Screen
 http://127.0.0.1:5000/eventscreen
 
-## Tools / Resources Used
+## Tools / resources used
 1. JS
 2. Flask
 3. Bootstrap
@@ -27,3 +27,7 @@ http://127.0.0.1:5000/eventscreen
 5. W3Schools
 6. Stack Overflow
 7. iEatWebsites
+
+## Watch the showcase
+https://img.youtube.com/vi/r5jgArkhyS4/maxresdefault.jpg
+
