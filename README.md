@@ -23,6 +23,8 @@ http://127.0.0.1:5000/create_event
 http://127.0.0.1:5000/eventscreen
 
 ## Tools / resources used
+
+### Implementation
 1. JS
 2. Flask
 3. Bootstrap
@@ -30,4 +32,16 @@ http://127.0.0.1:5000/eventscreen
 5. W3Schools
 6. Stack Overflow
 7. iEatWebsites
+
+### Video
+1. "End Credits" - Kin Leonn
+2. "Gats" - Susumu Hirasawa
+3. "People Don't Hurt Young People (The Interlude Song from "People Don't Hurt Young People") - Neo Hooo
+4. Clips from Vince Gilligan's _Better Call Saul_
+
+
+
+
+
+
 
