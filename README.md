@@ -8,6 +8,16 @@
 3. Navigate to the /downtime folder.
 4. To run the server locally, run "python app.py" in your command line.
 
+## Pages
+### Home Screen
+http://127.0.0.1:5000
+### Profile Screen
+http://127.0.0.1:5000/profile
+### Create Event
+http://127.0.0.1:5000/create_event
+### Event Screen
+http://127.0.0.1:5000/eventscreen
+
 ## Tools / Resources Used
 1. JS
 2. Flask
