@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,17 +31,16 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
 }
 
-/*button addition start*/
 .button-container {
     position: absolute; 
-    top: 10px; /* Distance from the top edge */
+    top: 10px;
     left: 0; 
     width: 100%; 
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 0 15px; 
-    z-index: 2; /* Ensure it appears on top of the banner */
+    z-index: 2;
 }
 
 
@@ -71,9 +69,9 @@ body {
 
 
 .top-button:hover {
-    background-color: rgba(0, 62, 31, 1); /* Solid background on hover */
-    border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
-    transform: scale(1.1); /* Slight zoom */
+    background-color: rgba(0, 62, 31, 1);
+    border-color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
 }
 
 .top-button:active {
@@ -84,7 +82,7 @@ body {
 
 .dropdown-menu {
     position: absolute;
-    top: 50px; /* Distance below the ellipse button */
+    top: 50px;
     right: 15px; 
     background-color: white;
     border: 1px solid #ddd;
@@ -109,27 +107,6 @@ body {
     border-radius: 4px;
 }
 
-/*
-.dropdown-menu {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-.dropdown-menu a {
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
-    color: #333;
-}
-.dropdown-menu a:hover {
-    background-color: #f0f0f0;
-}*/
-
-/*button addition end*/
-
 .event-banner {
     width: 100%;
     height: 240px; 
@@ -152,7 +129,6 @@ body {
     font-family: "mori-bold", sans-serif;
     font-weight: bold;
     line-height: 1.2; 
-    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);  */
     overflow: hidden; 
     z-index: 1; 
     display: flex;
@@ -264,7 +240,6 @@ body {
 }
 
 .event-description-box {
-    /* border: 1px solid darkgray;  */
     background-color: #EDEDED;
     padding: 15px; 
     height: 200px;
@@ -317,7 +292,6 @@ body {
     font-size: 18px; 
     font-weight: bold;
     color: #003E1F;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: white;
 
@@ -331,7 +305,6 @@ body {
     font-size: 18px; 
     font-weight: bold;
     color: white;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: #003E1F;
 }

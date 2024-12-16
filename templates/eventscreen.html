@@ -8,15 +8,12 @@
 </head>
     <body>
         <div class="app-container">
-
             <div class="button-container">
-                <!-- Back Button -->
                 <div class="top-button" id="back-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 27 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                         <polyline points="15 18 9 12 15 6"></polyline>
                       </svg>                      
                 </div>
-                <!-- Ellipse Button -->
                 <div class="top-button" id="ellipse">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
                         <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
@@ -32,7 +29,6 @@
             <div class="event-banner" style="background-image: url('{{ url_for('static', filename=event.photo) }}');">
                 <div class="event-name">{{ event.name }}</div>
             </div>
-
                 <div class="profile-container-right">
                     <img src="{{ url_for('static', filename=event.host_icon) }}" alt="Host Image" class="profile-image">
                 </div>
@@ -47,16 +43,6 @@
                 <span class="explore-tag">#aquatic ambience</span>
                 <span class="explore-tag">#donkey kong</span>
             </div>
-<!--             
-            <div class="event-tags-container">
-                <div class="event-tags">
-                    <span>#games</span>
-                    <span>#mario</span>
-                    <span>#nintendo</span>
-                    <span>#switch</span>
-                    <span>#donkeykong</span>
-                </div>
-            </div> -->
 
             <div class="event-details">
                 <div class="event-schedule">
@@ -117,5 +103,12 @@
         </div>
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
         <script src="{{ url_for('static', filename='js/bottom.js') }}"></script>
+        <script>
+            document.querySelectorAll(".join-button").forEach(function (button) {
+                button.addEventListener("click", function () {
+                    alert("Event joined successfully!");
+                });
+            });
+        </script>
     </body>
 </html>
