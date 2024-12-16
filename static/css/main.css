@@ -330,7 +330,6 @@ body, html {
 
 .name-text {
     font-size: 25px;
-    font-weight: bold;
     font-family: "mori-bold", sans-serif;
 }
 
@@ -452,7 +451,7 @@ body, html {
 .bottom-bar {
     backdrop-filter: blur(50px);
     font-family: sans-serif;
-    background-color: rgba(255, 255, 255, 0.756);
+    background-color: rgba(255, 255, 255, 0.783);
     display: flex;
     justify-content: space-around;
     align-items: center;
