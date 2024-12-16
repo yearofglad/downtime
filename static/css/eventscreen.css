@@ -32,7 +32,103 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
 }
 
+/*button addition start*/
+.button-container {
+    position: absolute; 
+    top: 10px; /* Distance from the top edge */
+    left: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 15px; 
+    z-index: 2; /* Ensure it appears on top of the banner */
+}
 
+
+.top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white; 
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#back-button {
+    margin-left: 0;
+}
+
+#ellipse {
+    margin-right: 0;
+}
+
+
+.top-button:hover {
+    background-color: rgba(0, 62, 31, 1); /* Solid background on hover */
+    border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
+    transform: scale(1.1); /* Slight zoom */
+}
+
+.top-button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px; /* Distance below the ellipse button */
+    right: 15px; 
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; 
+    z-index: 1000; 
+    min-width: 120px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/*
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    color: #333;
+}
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}*/
+
+/*button addition end*/
 
 .event-banner {
     width: 100%;
