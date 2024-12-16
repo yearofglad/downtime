@@ -8,7 +8,7 @@
 3. Navigate to the /downtime folder.
 4. To run the server locally, run "python app.py" in your command line.
 
-## Tools / Resources
+## Tools / Resources Used
 1. JS
 2. Flask
 3. Bootstrap
