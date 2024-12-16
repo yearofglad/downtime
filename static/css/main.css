@@ -20,8 +20,8 @@ body, html {
 }
 
 @font-face {
-    font-family: "mori-extrabold";
-    src: url("../fonts/moriextrabold.woff2") format('woff2');
+    font-family: "mori-semi";
+    src: url("../fonts/morisemibold.woff2") format('woff2');
 }
 
 .tags-section {
@@ -191,18 +191,19 @@ body, html {
     font-size: 18px;
     font-weight: bold;
     z-index: 2;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 7px black;
 }
 
 .event-time {
+    padding-top: 10px;
+    font-family: "mori-bold", sans-serif;
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+    color: rgb(38, 38, 38);
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 14px;
 }
 
