@@ -234,6 +234,7 @@ body, html {
     background-size: cover;
     opacity: 1;
     overflow: hidden;
+    box-shadow: 0 3px 5px #017c3f42;
 
 }
 
@@ -267,12 +268,18 @@ body, html {
     align-items: center;
     width: 60px;
     height: 60px;
+    box-shadow: 0 3px 10px #017c3f42;
     background-color: #ffffff;
     color: #003E1F;
     font-size: 20px;
     font-weight: bold;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.plus-button.added {
+    background-color: #1B998B;
+    color: #ffffff;
 }
 
 .top-button {
