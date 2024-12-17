@@ -391,8 +391,7 @@ body, html {
 }
 
 .middle-button {
-    font-family: "sf-sem", sans-serif;
-    font-weight: 600;
+    font-family: "mori-semi", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,7 +405,6 @@ body, html {
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0 3px 5px #017c3f42;
-    ;
     user-select: none;
     line-height: 1.2; 
 }

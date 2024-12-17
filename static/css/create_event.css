@@ -23,8 +23,8 @@ body, html {
  }
  
  @font-face {
-  font-family: "mori-extrabold";
-  src: url("../fonts/moriextrabold.woff2") format('woff2');
+  font-family: "mori-sem";
+  src: url("../fonts/morisemibold.woff2") format('woff2');
  }
  
  .create-event-screen {
@@ -165,8 +165,11 @@ body, html {
   justify-content: center;
   align-items: flex-start;
  }
+
+
  
  .event-form {
+  font-family: sans-serif !important;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -176,6 +179,7 @@ body, html {
  }
  
  .form-group {
+  font-family: sans-serif !important;
   font-size: 18px;
   margin-bottom: 20px;
   text-align: center;
@@ -191,6 +195,7 @@ body, html {
  
  .form-input,
  .form-textarea {
+  font-family: sans-serif !important;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -291,6 +296,7 @@ body, html {
  }
  
  .buttons-container {
+  font-family: "mori-sem", sans-serif;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -298,6 +304,7 @@ body, html {
  }
  
  .btn {
+  font-family: "mori-sem", sans-serif;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;

@@ -294,7 +294,7 @@ body, html {
     border: 2px solid #003E1F;
     border-radius: 50px;
     font-size: 18px; 
-    font-weight: bold;
+    font-family: "mori-sem", sans-serif;
     color: #003E1F;
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: white;
@@ -307,7 +307,7 @@ body, html {
     border: none;
     border-radius: 50px;
     font-size: 18px; 
-    font-weight: bold;
+    font-family: "mori-sem", sans-serif;
     color: white;
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: #003E1F;
