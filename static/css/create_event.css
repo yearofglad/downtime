@@ -72,6 +72,7 @@ body, html {
  
  .header-icons,
  .header-bottom-row {
+  margin-top: 30px;
   z-index: 3;
   position: relative;
  }
