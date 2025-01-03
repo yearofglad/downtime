@@ -10,12 +10,11 @@ https://www.youtube.com/watch?v=r5jgArkhyS4
 1. Make sure Flask and Python are installed.
 2. Clone repo:
 ```bash
-   git clone git@github.com:yearofglad/downtime.git
-   cd downtime
+git clone git@github.com:yearofglad/downtime.git
+cd downtime
 3. Run app:
  ```bash
 python server.py
-
 
 ## Pages
 ### Home Screen
