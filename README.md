@@ -6,7 +6,7 @@ Matt, Zack, Ben, & Alonzo
 ## Watch the showcase
 https://www.youtube.com/watch?v=r5jgArkhyS4
 
-## Installation
+## Local Installation
 1. Make sure Flask and Python are installed.
 2. Clone repo:
    ```bash
